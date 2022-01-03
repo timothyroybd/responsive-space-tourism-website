@@ -1,0 +1,103 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(img/background-home-mobile.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Cinzel", serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* Logo */
+
+/* Navigation Bar */
+.navigation-bar {
+  display: block;
+  position: fixed;
+  padding: 30px 0;
+  left: -100%;
+  top: 5rem;
+  flex-direction: column;
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.808),
+    rgba(36, 36, 36, 0.856)
+  );
+
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); */
+}
+
+.navigation-bar.active {
+  left: 0px;
+}
+.navigation-bar a {
+  color: white;
+  font-size: 1.25rem;
+  display: block;
+  padding: 10px;
+}
+/* .navigation-bar a:hover {
+  background-color: rgba(255, 255, 255, 0.918);
+  color: black;
+} */
+
+/* Hamburger */
+.hamburger {
+  display: block;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* paragraph section */
+#para-wrapper {
+  text-align: center;
+  color: white;
+  margin-top: 200px;
+}
+
+.head-para {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+  font-stretch: extra-expanded;
+}
+#big-text {
+  font-size: 6em;
+}
+.bottom-para {
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  padding: 22px 9.5%;
+  font-size: 1.03em;
+  line-height: 1.8;
+  font-weight: 100;
+}
